@@ -2,14 +2,14 @@
 date_default_timezone_set('America/Bogota');
 #Config database
 $host = 'localhost';
-$dbname = 'activgym_app';
-$dbuser = 'activgym_app';
-$dbpass = '!iTh0D;~#bv%';
+$dbname = 'stevenavs_sysgym';
+$dbuser = 'stevenavs_sysgym';
+$dbpass = '1ang-qp,~5}Am[I7';
 
 #whatsapp
 //$api_ws = '6RCr52QDJehDjsNVoFmXYyORu3lOF2eeoPW';
 //$api_ws = '8veaR5zoXDZYkBRsHfo1jc7xitzKI9Fjy0U';
-$url = 'https://app.activgym.com.co';
+$url = 'https://sysgym.intermediacol.com';
 
 $hoy = date('Y-m-d');
 $hora = date("H:i:s");
