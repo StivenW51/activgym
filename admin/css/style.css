@@ -212,6 +212,64 @@ table tbody tr {
 
 
 
+/*CSS para los componentes de accesibilidad*/
+
+/* Botón flotante */
+#btn-accesibilidad {
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1100;
+  padding: 12px;
+  border-radius: 50%;
+  border: none;
+  background: #D32F2F; /* Rojo acorde al menú */
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(0,0,0,0.4);
+  transition: background 0.3s;
+}
+#btn-accesibilidad:hover {
+  background: #B71C1C; /* Rojo más oscuro */
+}
+
+/* Panel oculto por defecto */
+#accesibilidad-tools {
+  position: fixed;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  background: #fefefe;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid #D32F2F;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  z-index: 1000;
+}
+#accesibilidad-tools button {
+  padding: 8px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #D32F2F;
+  color: #fff;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+#accesibilidad-tools button:hover {
+  background: #B71C1C;
+}
+
+/* Modo alto contraste */
+.high-contrast {
+  background: #000 !important;
+  color: #FFD600 !important; /* Amarillo fuerte para destacar */
+}
 
 
 
