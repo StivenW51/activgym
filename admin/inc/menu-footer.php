@@ -41,3 +41,56 @@
 <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/es.js"></script>
 
 
+<!-- PANEL DE ACCESIBILIDAD -->
+
+<!-- Botón flotante de accesibilidad -->
+<button id="btn-accesibilidad" aria-label="Abrir menú de accesibilidad" aria-expanded="false" title="Herramientas de accesibilidad">
+  <i class="bi bi-universal-access"></i>
+</button>
+
+<!-- Panel de accesibilidad -->
+<div id="accesibilidad-tools" role="complementary" aria-label="Herramientas de accesibilidad">
+  <!--<h4 ><i class="bi bi-sliders"></i> Accesibilidad</h4> -->
+  <button onclick="toggleContrast()" aria-pressed="false" title="Alto contraste">
+    <i class="bi bi-circle-half"></i> 
+  </button>
+  <button onclick="increaseFont()" title="Aumentar texto">
+    <i class="bi bi-zoom-in"></i> 
+  </button>
+  <button onclick="decreaseFont()" title="Disminuir texto">
+    <i class="bi bi-zoom-out"></i> 
+  </button>
+  <button onclick="resetFont()" title="Resetear">
+    <i class="bi bi-arrow-clockwise"></i> 
+  </button>
+</div>
+
+
+<script>
+const btnAccesibilidad = document.getElementById("btn-accesibilidad");
+const panelAccesibilidad = document.getElementById("accesibilidad-tools");
+
+btnAccesibilidad.addEventListener("click", () => {
+  const isOpen = panelAccesibilidad.style.display === "flex";
+  panelAccesibilidad.style.display = isOpen ? "none" : "flex";
+  btnAccesibilidad.setAttribute("aria-expanded", !isOpen);
+});
+
+function toggleContrast() {
+  document.body.classList.toggle("high-contrast");
+}
+
+function increaseFont() {
+  document.body.style.fontSize = 
+    (parseInt(getComputedStyle(document.body).fontSize) + 2) + "px";
+}
+
+function decreaseFont() {
+  document.body.style.fontSize = 
+    (parseInt(getComputedStyle(document.body).fontSize) - 2) + "px";
+}
+
+function resetFont() {
+  document.body.style.fontSize = "16px";
+}
+</script>
