@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy PHP app to Azure Web App - ActivGym
+name: Build and deploy PHP app to Azure Web App - activgym
 
 on:
   push:
@@ -56,15 +56,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_88EC1DB7E82E43688490AA4273FCC17B }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_B70AE66DEAA7436C9147F528FBC4BC7A }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_0EF456CE2C3E4A0A9815E80060823636 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_7849769836534474A2F79233E4F43F35 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_21CD65A76DF14F0DB76B403305102AE8 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_1E431097CC5B4B29BB5EA68F66152D13 }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'ActivGym'
+          app-name: 'activgym'
           slot-name: 'Production'
           package: .
           
