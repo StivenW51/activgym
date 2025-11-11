@@ -1,6 +1,6 @@
 <?php
 // session.php
-$host = 'localhost';
+$host = '170.10.162.251';
 $dbname = 'stevenavs_sysgym';
 $dbuser = 'stevenavs_sysgym';
 $dbpass = '1ang-qp,~5}Am[I7';
