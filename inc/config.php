@@ -9,7 +9,7 @@ $dbpass = '1ang-qp,~5}Am[I7';
 #whatsapp
 //$api_ws = '6RCr52QDJehDjsNVoFmXYyORu3lOF2eeoPW';
 //$api_ws = '8veaR5zoXDZYkBRsHfo1jc7xitzKI9Fjy0U';
-$url = 'https://sysgym.intermediacol.com';
+$url = 'https://activgym.azurewebsites.net';
 
 $hoy = date('Y-m-d');
 $hora = date("H:i:s");

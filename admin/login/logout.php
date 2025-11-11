@@ -16,7 +16,7 @@ if (isset($_COOKIE['remember_me'])) {
     $token = $_COOKIE['remember_me'];
     $stmt = $pdo->prepare("DELETE FROM user_tokens WHERE token = :token");
     $stmt->execute([':token' => $token]);
-    setcookie('remember_me', '', time() - 3600, '/', 'sysgym.intermediacol.com/', true, true);
+    setcookie('remember_me', '', time() - 3600, '/', 'activgym.azurewebsites.net/', true, true);
 }
 
 // Destruir la sesión

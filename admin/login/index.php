@@ -93,7 +93,7 @@ if (isset($_POST['remember_me']) && $_POST['remember_me'] == 1) {
 
     // Guarda el token en una cookie persistente
     // Asegúrate de que el dominio y demás parámetros coincidan con tu configuración
-    setcookie('remember_me', $token, $expiry, '/', 'sysgym.intermediacol.com/', true, true);
+    setcookie('remember_me', $token, $expiry, '/', 'activgym.azurewebsites.net/', true, true);
 }
 
 header("Location: $url/admin/");
