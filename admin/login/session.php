@@ -10,7 +10,7 @@ $tiempoUnAno = 365 * 24 * 60 * 60;
 session_set_cookie_params([
     'lifetime' => $tiempoUnAno,
     'path'     => '/',
-    'domain'   => 'sysgym.intermediacol.com/',
+    'domain'   => 'activgym.azurewebsites.net/',
     'secure'   => true,
     'httponly' => true,
     'samesite' => 'Lax'
@@ -55,10 +55,10 @@ if (!isset($_SESSION["user"]) && isset($_COOKIE['remember_me'])) {
                 ':newExpiry' => $newExpiry,
                 ':oldToken'  => $token
             ]);
-            setcookie('remember_me', $newToken, $newExpiry, '/', 'sysgym.intermediacol.com/', true, true);
+            setcookie('remember_me', $newToken, $newExpiry, '/', 'activgym.azurewebsites.net/', true, true);
         }
     } else {
-        setcookie('remember_me', '', time() - 3600, '/', 'sysgym.intermediacol.com/', true, true);
+        setcookie('remember_me', '', time() - 3600, '/', 'activgym.azurewebsites.net/', true, true);
     }
 }
 
